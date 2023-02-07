@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ClementLib\\WorkflowEngine\\' => array($baseDir . '/src'),
+    'Jimaoxiaoxin\\WorkflowEngine\\' => array($baseDir . '/src'),
 );
