@@ -1,7 +1,7 @@
 {
     "name": "clement-lib/workflow-engine",
     "description": "laravel workflow engine",
-    "type": "project",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
