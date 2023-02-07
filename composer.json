@@ -1,0 +1,19 @@
+{
+    "name": "clement-lib/workflow-engine",
+    "description": "laravel workflow engine",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clement LIN",
+            "email": "clement.lin@tlscontact.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ClementLib\\WorkflowEngine\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
