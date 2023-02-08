@@ -9,12 +9,12 @@ class ComposerStaticInit2156e28651850df4c6bc3f839fe88d9b
     public static $prefixLengthsPsr4 = array (
         'J' => 
         array (
-            'Jimaoxiaoxin\\WorkflowEngine\\' => 28,
+            'Jimaoxiaoxin\\VisaWorkflowEngine\\' => 32,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Jimaoxiaoxin\\WorkflowEngine\\' => 
+        'Jimaoxiaoxin\\VisaWorkflowEngine\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

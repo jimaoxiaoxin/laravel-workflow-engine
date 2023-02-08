@@ -1,5 +1,5 @@
 {
-    "name": "jimaoxiaoxin/workflow-engine",
+    "name": "jimaoxiaoxin/visa-workflow-engine",
     "description": "laravel workflow engine",
     "type": "library",
     "license": "MIT",
@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Jimaoxiaoxin\\WorkflowEngine\\": "src/"
+            "Jimaoxiaoxin\\VisaWorkflowEngine\\": "src/"
         }
     },
     "minimum-stability": "stable",
