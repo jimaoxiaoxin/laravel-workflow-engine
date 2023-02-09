@@ -15,7 +15,7 @@ use Jimaoxiaoxin\VisaWorkflowEngine\Services\VisaWorkflowEngineService;
 |
 */
 
-Route::get('/visa-workflow-engine/config', function($name) {
+Route::get('/visa-workflow-engine/config', function() {
     return 'Hello';
 //    $workflowEngineService = new VisaWorkflowEngineService();
 //    return $workflowEngineService->getConfig();
