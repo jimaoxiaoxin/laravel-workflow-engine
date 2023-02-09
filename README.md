@@ -1,2 +1,2 @@
-# workflow-engine
-workflow engine
+# Visa Workflow Engine
+A collection of state machine.
