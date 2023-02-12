@@ -15,7 +15,7 @@ use Jimaoxiaoxin\LaravelWorkflowEngine\Services\LaravelWorkflowEngineService;
 |
 */
 
-Route::get('/visa-workflow-engine/config', function() {
+Route::get('/laravel-workflow-engine/config', function() {
     $workflowEngineService = new LaravelWorkflowEngineService();
     return $workflowEngineService->getConfig();
 });
