@@ -1,8 +1,8 @@
 <?php
 
-namespace Jimaoxiaoxin\VisaWorkflowEngine;
+namespace Jimaoxiaoxin\LaravelWorkflowEngine;
 
-class VisaWorkflowEngine {
+class LaravelWorkflowEngine {
     public function test(String $name): String {
         return 'Hi' . $name;
     }

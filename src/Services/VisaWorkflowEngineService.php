@@ -1,8 +1,8 @@
 <?php
 
-namespace Jimaoxiaoxin\VisaWorkflowEngine\Services;
+namespace Jimaoxiaoxin\LaravelWorkflowEngine\Services;
 
-class VisaWorkflowEngineService {
+class LaravelWorkflowEngineService {
 
     public function getConfig()
     {

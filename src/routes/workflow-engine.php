@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Jimaoxiaoxin\VisaWorkflowEngine\Services\VisaWorkflowEngineService;
+use Jimaoxiaoxin\LaravelWorkflowEngine\Services\LaravelWorkflowEngineService;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +16,6 @@ use Jimaoxiaoxin\VisaWorkflowEngine\Services\VisaWorkflowEngineService;
 */
 
 Route::get('/visa-workflow-engine/config', function() {
-    return 'Hello';
-//    $workflowEngineService = new VisaWorkflowEngineService();
-//    return $workflowEngineService->getConfig();
+    $workflowEngineService = new LaravelWorkflowEngineService();
+    return $workflowEngineService->getConfig();
 });

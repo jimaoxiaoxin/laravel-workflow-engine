@@ -1,6 +1,6 @@
 <?php
 
-namespace Jimaoxiaoxin\VisaWorkflowEngine\Providers;
+namespace Jimaoxiaoxin\LaravelWorkflowEngine\Providers;
 
 use Illuminate\Support\ServiceProvider;
 class WorkflowEngineServiceProvider extends ServiceProvider {
