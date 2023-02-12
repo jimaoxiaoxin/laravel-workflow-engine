@@ -2,12 +2,17 @@
 
 return [
     'general' => [
-        'state_machines' => [
+        'steps' => [
             [
                 'name' => 'step_A', //filling
                 'order' => 1,
                 'type' => 'single',
                 'init_status' => 'ready',
+                'transitions' => [
+                    'action_A' => [
+                        'ready' => 'done',
+                    ]
+                ],
                 'group_status_order' => [
                     'ready',
                     'done',
@@ -22,6 +27,11 @@ return [
                     'ready',
                     'done',
                 ],
+                'transitions' => [
+                    'action_A' => [
+                        'ready' => 'done',
+                    ]
+                ],
             ],
             [
                 'name' => 'step_C', // application_support
@@ -33,12 +43,34 @@ return [
                     'ready',
                     'done',
                 ],
+                'transitions' => [
+                    'action_A' => [
+                        'n_a' => 'ready',
+                    ],
+                    'action_B' => [
+                        'ready' => 'half_done',
+                    ],
+                    'action_C' => [
+                        'half_done' => 'done',
+                    ]
+                ]
             ],
             [
                 'name' => 'step_D', //appointment
                 'order' => 4,
                 'type' => 'multi',
                 'init_status' => 'n_a',
+                'transitions' => [
+                    'action_A' => [
+                        'n_a' => 'ready',
+                    ],
+                    'action_D' => [
+                        'ready' => 'half_done',
+                    ],
+                    'action_E' => [
+                        'half_done' => 'done',
+                    ],
+                ],
                 'reference_status_order' => [
                     'n_a',
                     'ready',
@@ -57,6 +89,20 @@ return [
                 'order' => 5,
                 'type' => 'single',
                 'init_status' => 'n_a',
+                'transitions' => [
+                    'action_E' => [
+                        'n_a' => 'ready',
+                    ],
+                    'action_F' => [
+                        'ready' => 'half_done',
+                    ],
+                    'action_G' => [
+                        'half_done' => '80_percent_done',
+                    ],
+                    'action_H' => [
+                        '80_percent_done' => 'done',
+                    ],
+                ],
                 'group_status_order' => [
                     'n_a',
                     'ready',
@@ -68,6 +114,14 @@ return [
                 'order' => 6,
                 'type' => 'single',
                 'init_status' => 'n_a',
+                'transitions' => [
+                    'action_H' => [
+                        'n_a' => 'ready',
+                    ],
+                    'action_I' => [
+                        'ready' => 'done',
+                    ],
+                ],
                 'group_status_order' => [
                     'n_a',
                     'ready',
@@ -79,54 +133,20 @@ return [
                 'order' => 7,
                 'type' => 'single',
                 'init_status' => 'n_a',
+                'transitions' => [
+                    'action_I' => [
+                        'n_a' => 'ready',
+                    ],
+                    'action_J' => [
+                        'ready' => 'done',
+                    ],
+                ],
                 'group_status_order' => [
                     'n_a',
                     'ready',
                     'done',
                 ],
             ],
-        ],
-        'transitions' => [
-            'step_A' => [
-                'action_A' => 'done',
-            ],
-            'step_B' => [
-                'action_A' => 'done',
-            ],
-            'step_C' => [
-                'action_A' => 'ready',
-                'action_B' => 'half_done',
-                'action_C' => 'done',
-            ],
-            'step_D' => [
-                'action_A' => 'ready',
-                'action_D' => 'half_done',
-                'action_E' => 'done',
-            ],
-            'step_E' => [
-                'action_E' => 'ready',
-                'action_F' => 'half_done',
-                'action_G' => '80_percent_done',
-                'action_H' => 'done',
-            ],
-            'step_F' => [
-                'action_H' => 'ready',
-                'action_I' => 'done',
-            ],
-            'step_G' => [
-                'action_I' => 'ready',
-                'action_J' => 'done',
-            ],
-//            'action_A' => [ // submit
-//            'action_B' => [ // application_support_requested
-//            'action_C' => [ // application_support_paid
-//            'action_D' => [ // take_appointment
-//            'action_E' => [ // attend appointment
-//            'action_F' => [ // document_expected
-//            'action_G' => [ // document_expected_come
-//            'action_H' => [ // document_done
-//            'action_I' => [ // receive_service_fee
-//            'action_J' => [ // delivery
         ],
     ],
 ];
