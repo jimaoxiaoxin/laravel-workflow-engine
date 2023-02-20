@@ -4,7 +4,7 @@ return [
     'general' => [
         'steps' => [
             [
-                'name' => 'step_A', //filling
+                'name' => 'step_A',
                 'order' => 1,
                 'type' => 'single',
                 'init_status' => 'ready',
@@ -19,7 +19,7 @@ return [
                 ],
             ],
             [
-                'name' => 'step_B', //submission
+                'name' => 'step_B',
                 'order' => 2,
                 'type' => 'single',
                 'init_status' => 'ready',
@@ -34,7 +34,7 @@ return [
                 ],
             ],
             [
-                'name' => 'step_C', // application_support
+                'name' => 'step_C',
                 'order' => 3,
                 'type' => 'single',
                 'init_status' => 'n_a',
@@ -56,7 +56,7 @@ return [
                 ]
             ],
             [
-                'name' => 'step_D', //appointment
+                'name' => 'step_D',
                 'order' => 4,
                 'type' => 'multi',
                 'init_status' => 'n_a',
@@ -85,7 +85,7 @@ return [
                 ],
             ],
             [
-                'name' => 'step_E', // documentation
+                'name' => 'step_E',
                 'order' => 5,
                 'type' => 'single',
                 'init_status' => 'n_a',
@@ -110,7 +110,7 @@ return [
                 ],
             ],
             [
-                'name' => 'step_F', // service_fees
+                'name' => 'step_F',
                 'order' => 6,
                 'type' => 'single',
                 'init_status' => 'n_a',
@@ -129,7 +129,7 @@ return [
                 ],
             ],
             [
-                'name' => 'step_G', // delivery
+                'name' => 'step_G',
                 'order' => 7,
                 'type' => 'single',
                 'init_status' => 'n_a',
